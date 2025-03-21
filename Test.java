@@ -1,4 +1,3 @@
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -11,6 +10,6 @@ public class Test {
         System.out.println("Sum of numbers using for loop : " + forLoop.sumOfNUmber(numberList));
         System.out.println("Sum of number using while loop : " + whileLopp.sumOfNUmber(numberList));
         System.out.println("Sum of numbers using recursion: " + recursion.sumOfNumbers(numberList, 0));
-        
+
     }
 }
