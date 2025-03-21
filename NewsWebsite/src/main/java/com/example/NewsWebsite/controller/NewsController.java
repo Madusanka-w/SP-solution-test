@@ -77,4 +77,14 @@ public class NewsController {
 	}
   }
 
+  @GetMapping("/categoryId/{id}")
+  public ResponseEntity getNewsByCategoryId(@PathVariable Long id) {
+	try {
+	  List<News> news = newsService.findByCategoryId(id);
+	  return new ResponseEntity<>(news, HttpStatus.OK);
+	}catch (Exception e){
+	  return new ResponseEntity<>(null, HttpStatus.INTERNAL_SERVER_ERROR);
+	}
+  }
+
 }

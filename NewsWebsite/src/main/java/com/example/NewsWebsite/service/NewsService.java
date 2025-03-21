@@ -91,5 +91,10 @@ public class NewsService {
 
   }
 
+  public List<News> findByCategoryId(Long categoryId){
+	List<News> newsList = newsRepository.findByCategories_Id(categoryId);
+	return newsList;
+  }
+
 
 }
